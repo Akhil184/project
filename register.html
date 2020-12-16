@@ -1,0 +1,68 @@
+<html> 
+<head> 
+<style>
+body {
+  background-image: url("aj.jpg");
+  background-repeat: no-repeat;
+background-size: 1750px 1000px;
+}
+.field_set{
+ border-color:salmon;
+}
+</style>
+
+
+<center>
+ 
+<form action="register.jsp" method="post">  
+<br><br><br><br><br><br><br><br><br><br><br><br>
+  <fieldset style="width:500px" class="field_set">
+<legend>Registration</legend><br><br>
+Name:<input type="text" name="userEmail"/><br/><br/>   
+User Name:<input type="text" name="userName"/><br/><br/>  
+Country:  
+<select name="userCountry">  
+<option>India</option>  
+<option>Pakistan</option>  
+<option>other</option>  
+</select>  
+<br><br>Password:<input type="text" name="userPass" id="myInput"><br/><br/>  
+Confirm Password:<input type="text" name="obile" id="my"><br><br/>   
+
+<input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color:black; background-color:lightgreen; border: 5pt ridge lightgrey" value=" submit " onclick="myFunction()"/>
+<input type="reset" style="font-face: 'Comic Sans MS'; font-size: larger; color: black; background-color:melon; border: 5pt ridge lightgrey" value=" reset ">
+<style>
+a {
+  color: hotpink;
+}
+</style>
+</head>
+<p>Already have an account?</p><a href="signin.html">signin</a>
+</fieldset> 
+
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var letter = document.getElementById("myInput").value;
+  var text=document.getElementById("my").value;;
+
+  // If the letter is "c"
+  if (text!=letter) {
+    text = "not match";
+    
+ 
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
+</form> 
+</center> 
+</body>  
+</html>  
